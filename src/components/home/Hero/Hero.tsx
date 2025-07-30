@@ -13,18 +13,18 @@ export const Hero = () => (
         className="object-cover w-full h-full"
         priority
       />
-      <div className="absolute inset-0 bg-black/40" />
+      <div className="absolute inset-0 bg-black/50" />
     </div>
 
     <div className="relative z-10 h-full flex flex-col justify-between items-center text-center p-4">
-      <h2 className="text-4xl md:text-5xl font-bold text-white animate-fade-in drop-shadow-lg">
+      <h2 className="text-2xl md:text-5xl font-bold text-white animate-fade-in drop-shadow-lg">
         Profesjonalne Systemy Zabezpieczeń
       </h2>
-      <p className="text-lg text-gray-100 mt-4 mb-6 max-w-xl">
+      <p className="text-lg text-gray-100  mt-4 mb-6 max-w-xl">
         Monitoring, alarmy, inteligentne rozwiązania dla Twojego domu i firmy
         <Link href="#oferta">
           <button className="px-6 py-2 mt-4 bg-blue-600 text-white font-semibold rounded shadow-md hover:bg-blue-700 transition duration-300">
-            Sprawdź ofertę
+            Zamów wycenę
           </button>
         </Link>
       </p>

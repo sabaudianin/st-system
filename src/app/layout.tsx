@@ -23,7 +23,7 @@ export default function RootLayout({
         <Header />
         <main
           id="main"
-          className="min-h-[calc(100vh-160px)] px-4 py-8 bg-gradient-to-br from-blue-50 to-red-900 dark:from-sky-700 dark:to-blue-700"
+          className="min-h-screen p-2 lg:p-8 bg-primary-dark "
         >
           {children}
         </main>

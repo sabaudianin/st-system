@@ -1,28 +1,17 @@
-import type { Config } from "tailwindcss";
-import forms from "@tailwindcss/forms";
-import typography from "@tailwindcss/typography";
-import aspectRatio from "@tailwindcss/aspect-ratio";
-
-const config: Config = {
-  content: ["./src/**/*.{ts,tsx,js,jsx,mdx}"],
+/** @type {import('tailwindcss').Config} */
+const config = {
   darkMode: "class",
+  content: [
+    "./app/**/*.{js,ts,jsx,tsx}",
+    "./components/**/*.{js,ts,jsx,tsx}",
+    "./layouts/**/*.{js,ts,jsx,tsx}",
+    "./pages/**/*.{ts,tsx}",
+  ],
   theme: {
-    extend: {
-      keyframes: {
-        "fade-in": {
-          "0%": { opacity: 0 },
-          "100%": { opacity: 1 },
-        },
-      },
-      animation: {
-        "fade-in": "fade-in 1s ease-out",
-      },
-      fontFamily: {
-        sans: ["var(--font-inter)", "sans-serif"],
-      },
-    },
+    extend: {},
   },
-  plugins: [forms, typography, aspectRatio],
+  plugins: [],
+  safelist: [],
 };
 
 export default config;
