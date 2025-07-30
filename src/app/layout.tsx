@@ -23,7 +23,7 @@ export default function RootLayout({
         <Header />
         <main
           id="main"
-          className="min-h-screen p-2 lg:p-8 bg-primary-dark "
+          className="min-h-screen p-2 lg:p-8  "
         >
           {children}
         </main>
