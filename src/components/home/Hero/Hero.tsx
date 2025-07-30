@@ -1,7 +1,6 @@
 "use client";
 
 import Image from "next/image";
-import Link from "next/link";
 
 export const Hero = () => (
   <section className="relative w-full h-[500px] rounded overflow-hidden ">
@@ -22,11 +21,6 @@ export const Hero = () => (
       </h2>
       <p className="text-lg text-gray-100  mt-4 mb-6 max-w-xl">
         Monitoring, alarmy, inteligentne rozwiązania dla Twojego domu i firmy
-        <Link href="#oferta">
-          <button className="px-6 py-2 mt-4 bg-blue-600 text-white font-semibold rounded shadow-md hover:bg-blue-700 transition duration-300">
-            Zamów wycenę
-          </button>
-        </Link>
       </p>
     </div>
   </section>

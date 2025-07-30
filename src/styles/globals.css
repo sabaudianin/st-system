@@ -1,10 +1,13 @@
 @import "tailwindcss";
 
+/* ========================
+  Kolory i zmienne globalne
+======================== */
 :root {
-  --background: #347eda;
-  --foreground: #222;
-  --primary-dark: #081018;
-  --fade-in-animation: fade-in 5s;
+  --background: #f1f5f9; /* jasny, profesjonalny (slate-100) */
+  --foreground: #222; /* ciemny tekst */
+  --primary-dark: #1e293b; /* głęboki granat (slate-800) */
+  --fade-in-animation: fade-in 1.1s;
 }
 body {
   background-color: var(--background);
@@ -12,16 +15,13 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
 .dark {
-  --background: #0b1421;
+  --background: #0b1421; /* głęboki granat dla dark mode */
   --foreground: #e7e7e7;
 }
-
 .bg-primary-dark {
   background-color: var(--primary-dark);
 }
-
 .bg-background {
   background-color: var(--background);
 }
@@ -29,16 +29,112 @@ body {
   color: var(--foreground);
 }
 
-/* Animations */
+/* =========================
+  Animacje globalne i CTA
+========================= */
+
+/* Fade-in dla prostych wejść */
 @keyframes fade-in {
-  0% {
+  from {
     opacity: 0;
   }
-  100% {
+  to {
     opacity: 1;
   }
 }
-
 .animate-fade-in {
-  animation: var(--fade-in-animation);
+  animation: var(--fade-in-animation, fade-in 1.1s);
+}
+
+/* Fade-in-up (np. CTA, cards) */
+@keyframes fade-in-up {
+  0% {
+    opacity: 0;
+    transform: translateY(60px) scale(0.96);
+  }
+  60% {
+    opacity: 0.7;
+    transform: translateY(-12px) scale(1.03);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+.animate-fade-in-up {
+  animation: fade-in-up 1.1s cubic-bezier(0.4, 0.2, 0.2, 1) both;
+}
+
+/* CTA pulsujący glow */
+@keyframes cta-glow {
+  0%,
+  100% {
+    box-shadow: 0 0 28px 0 #2563eb66, 0 2px 12px 0 #0002;
+  }
+  50% {
+    box-shadow: 0 0 56px 6px #60a5fa77, 0 4px 24px 0 #0003;
+  }
+}
+.cta-glow {
+  animation: cta-glow 2.2s infinite cubic-bezier(0.86, 0, 0.07, 1);
+}
+
+/* Animacja strzałki w przycisku */
+@keyframes arrow-move {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  60% {
+    transform: translateX(8px);
+  }
+}
+.arrow-anim {
+  animation: arrow-move 1.1s infinite cubic-bezier(0.5, 0, 0, 1);
+}
+
+@keyframes bg-gradient-move {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.cta-animated-bg {
+  background: linear-gradient(120deg, #0f172a 0%, #1e293b 60%, #475569 100%);
+  background-size: 200% 200%;
+  animation: bg-gradient-move 10s ease-in-out infinite;
+}
+
+/* Glassmorphism box: jasne szkło, lepsze na ciemnym tle */
+.backdrop-glass {
+  background: rgba(255, 255, 255, 0.7); /* efekt jasnego szkła */
+  backdrop-filter: blur(14px) saturate(120%);
+  -webkit-backdrop-filter: blur(14px) saturate(120%);
+  border-radius: 1.5rem;
+  border: 1.5px solid rgba(100, 116, 139, 0.16); /* slate-400/400 */
+  box-shadow: 0 4px 32px 0 rgba(30, 41, 59, 0.12);
+}
+
+/* Responsywnie na mobile tło glassboxa może być pełniejsze */
+@media (max-width: 640px) {
+  .backdrop-glass {
+    background: rgba(255, 255, 255, 0.92);
+  }
+}
+
+@keyframes svg-move {
+  0% {
+    transform: translateY(0) scale(1);
+  }
+  100% {
+    transform: translateY(-16px) scale(1.02);
+  }
+}
+.svg-moving-bg {
+  animation: svg-move 18s linear infinite alternate;
 }
