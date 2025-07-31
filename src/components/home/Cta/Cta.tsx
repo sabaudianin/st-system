@@ -4,24 +4,22 @@ import Link from "next/link";
 
 export const Cta = () => {
   return (
-    <section className="cta-animated-bg flex flex-col items-center justify-center gap-6 text-center min-h-[420px] relative overflow-hidden">
-      {/* SVG BG */}
+    <section className="flex flex-col items-center justify-center gap-6 text-center min-h-[420px] relative overflow-hidden">
       <svg
         aria-hidden="true"
         className="absolute inset-0 w-full h-full z-0 opacity-30 pointer-events-none select-none svg-moving-bg "
-        viewBox="0 0 900 420"
+        viewBox="0 0 900 450"
         fill="none"
+        preserveAspectRatio="none"
         xmlns="http://www.w3.org/2000/svg"
         style={{
-          minWidth: "900px",
-          minHeight: "420px",
           maxWidth: "100vw",
           maxHeight: "100%",
         }}
       >
         <g
-          stroke="#64748b"
-          strokeWidth="1.5"
+          stroke="#f0f0f0"
+          strokeWidth="1.9"
         >
           <circle
             cx="120"
@@ -98,7 +96,7 @@ export const Cta = () => {
           />
         </g>
         <g
-          stroke="#cbd5e1"
+          stroke="#ffffffff"
           strokeWidth="0.6"
         >
           <circle
@@ -179,7 +177,7 @@ export const Cta = () => {
             />
           </button>
         </Link>
-        <span className="text-xs text-slate-500 mt-2 flex items-center gap-1 tracking-wide">
+        <span className="text-xs  mt-2 flex items-center gap-1 tracking-wide">
           <svg
             className="w-4 h-4 animate-pulse"
             fill="none"
