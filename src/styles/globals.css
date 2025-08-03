@@ -6,6 +6,7 @@
   --primary-dark: #1e293b;
   --fade-in-animation: fade-in 1.1s;
   --hero-overlay: rgba(45, 104, 182, 0.245);
+  --header-bg: rgba(255, 255, 255, 0.85);
 }
 body {
   background-color: var(--background);
@@ -17,6 +18,7 @@ body {
   --background: #0b1421;
   --foreground: #e7e7e7;
   --hero-overlay: rgba(0, 0, 0, 0.5);
+  --header-bg: rgba(17, 24, 39, 0.93);
 }
 .bg-primary-dark {
   background-color: var(--primary-dark);
