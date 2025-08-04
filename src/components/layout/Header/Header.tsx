@@ -1,8 +1,10 @@
 "use client";
 import React, { useState } from "react";
 import Link from "next/link";
+import { useDarkTheme } from "@/hooks/useDarkTheme/useDarkTheme";
 
 export const Header = () => {
+  const { isDark, toggle } = useDarkTheme();
   const [open, setIsOpen] = useState(false);
   const navLinks = [
     { href: "/", label: "Start" },
@@ -10,11 +12,7 @@ export const Header = () => {
     { href: "/kontakt", label: "Kontakt" },
   ];
   return (
-    <header
-      className="
-      fixed top-0 left-0 w-full z-50 h-20 
-      bg-[var(--header-bg)] backdrop-blur-md border-b border-slate-200/80 shadow-sm transition-all duration-300"
-    >
+    <header className="fixed top-0 left-0 w-full z-50 h-20 bg-[var(--panel-bg)] backdrop-blur-md border-b border-slate-200/80 shadow-sm transition-all duration-300">
       <nav
         className="max-w-7xl mx-auto px-6 md:px-12 h-full flex justify-between items-center"
         aria-label="Główna nawigacja"
@@ -29,7 +27,9 @@ export const Header = () => {
           </span>
           ST System
         </Link>
-
+        <button onClick={toggle}>
+          {isDark ? "Jasny Motyw" : "Ciemy Motyw"}
+        </button>
         <ul className="hidden md:flex gap-10 text-base font-medium items-center">
           {navLinks.map((link) => (
             <li key={link.href}>
