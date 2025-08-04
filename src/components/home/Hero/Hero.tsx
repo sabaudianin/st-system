@@ -12,7 +12,7 @@ export const Hero = () => (
         className="object-cover w-full h-full"
         priority
       />
-      {/* Overlay zależny od zmiennej CSS */}
+
       <div
         className="absolute inset-0 transition-colors duration-500"
         style={{ backgroundColor: "var(--hero-overlay)" }}
@@ -20,10 +20,10 @@ export const Hero = () => (
     </div>
     <div className="relative z-10 h-full flex flex-col justify-between items-center text-center p-4">
       <h2 className="text-2xl md:text-5xl font-extrabold animate-fade-in drop-shadow-lg text-white">
-        Profesjonalne Systemy Zabezpieczeń
+        Nowoczesne rozwiązania dla Twojego bezpieczeństwa.
       </h2>
       <p className="text-lg mt-4 mb-6 max-w-xl  font-bold">
-        Monitoring, alarmy, inteligentne rozwiązania dla Twojego domu i firmy
+        Monitoring, alarmy, inteligentne rozwiązania dla Twojego domu i firmy.
       </p>
     </div>
   </section>

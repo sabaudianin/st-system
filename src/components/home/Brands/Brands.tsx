@@ -3,9 +3,9 @@ import Image from "next/image";
 
 export const Brands = () => {
   return (
-    <section className="w-full py-8 px-4 md:px-0 flex flex-col items-center bg-background">
-      <h3 className="text-xl md:text-2xl font-bold text-slate-700 mb-4 animate-fade-in">
-        Zaufali nam:
+    <section className="w-full py-4 px-4 md:px-0 flex flex-col items-center bg-background">
+      <h3 className="text-xl md:text-2xl font-bold py-8 animate-fade-in">
+        Twój spokój, najlepsza technologia:
       </h3>
       <div className="flex flex-wrap justify-center items-center gap-8 md:gap-16 w-full max-w-3xl animate-fade-in-up">
         <div className="flex flex-col items-center">
@@ -14,9 +14,8 @@ export const Brands = () => {
             alt="Satel"
             width={120}
             height={48}
-            className="object-contain grayscale hover:grayscale-0 transition duration-300"
+            className="object-contain bg-white rounded-md px-1 shadow-sm"
           />
-          <span className="text-xs mt-2 text-slate-500">Satel</span>
         </div>
         <div className="flex flex-col items-center">
           <Image
@@ -24,9 +23,8 @@ export const Brands = () => {
             alt="Hikvision"
             width={128}
             height={40}
-            className="object-contain grayscale hover:grayscale-0 transition duration-300"
+            className="object-contain hover:grayscale-0 transition duration-300 bg-white rounded-md p-2 shadow-sm"
           />
-          <span className="text-xs mt-2 text-slate-500">Hikvision</span>
         </div>
       </div>
     </section>
