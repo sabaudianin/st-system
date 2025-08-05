@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { Logo } from "@/components/elements/logo/logo";
 
 export const Footer = () => (
   <footer
@@ -6,17 +7,7 @@ export const Footer = () => (
       flex flex-col items-center gap-5 md:gap-6 py-8 px-4 text-center text-sm border-t border-slate-200/80 bg-[var(--panel-bg)] w-full"
     aria-label="Stopka strony"
   >
-    <Link
-      href="/"
-      aria-label="Strona główna ST System"
-      className="flex items-center gap-3 text-xl font-extrabold tracking-tight text-[var(--foreground)]"
-    >
-      <span className="relative flex h-7 w-7">
-        <span className="animate-ping absolute h-full w-full rounded-full bg-red-500 opacity-40"></span>
-        <span className="relative inline-flex rounded-full h-7 w-7 bg-red-500"></span>
-      </span>
-      ST System
-    </Link>
+    <Logo />
 
     <div className="flex flex-col md:flex-row items-center gap-2 md:gap-4">
       <a

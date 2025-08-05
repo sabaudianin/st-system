@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import { useDarkTheme } from "@/hooks/useDarkTheme/useDarkTheme";
+import { Logo } from "@/components/elements/logo/logo";
 
 export const Header = () => {
   const { isDark, toggle } = useDarkTheme();
@@ -17,16 +18,7 @@ export const Header = () => {
         className="max-w-7xl mx-auto px-6 md:px-12 h-full flex justify-between items-center"
         aria-label="Główna nawigacja"
       >
-        <Link
-          href="/"
-          className="flex items-center gap-3 text-xl font-extrabold tracking-tight text-[var(--foreground)]"
-        >
-          <span className="relative flex h-7 w-7">
-            <span className="animate-ping absolute h-full w-full rounded-full bg-red-500 opacity-40"></span>
-            <span className="relative inline-flex rounded-full h-7 w-7 bg-red-500"></span>
-          </span>
-          ST System
-        </Link>
+        <Logo />
         <button onClick={toggle}>
           {isDark ? "Jasny Motyw" : "Ciemy Motyw"}
         </button>
