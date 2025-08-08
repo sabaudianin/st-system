@@ -2,7 +2,6 @@ export const Rating = () => {
   return (
     <section className="bg-[var(--garish-bg)] p-4 text-center">
       <div className="flex flex-col gap-4">
-        <p className="font-bold text-4xl">4.85/5.0</p>
         <div className="flex justify-center">
           {[...Array(5)].map((_, i) => (
             <span
