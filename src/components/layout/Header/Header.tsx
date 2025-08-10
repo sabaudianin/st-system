@@ -2,18 +2,19 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import { useDarkTheme } from "@/hooks/useDarkTheme/useDarkTheme";
-import { Logo } from "@/components/elements/logo/logo";
+
+import { Logo } from "../../elements/logo/Logo";
 
 export const Header = () => {
   const { isDark, toggle } = useDarkTheme();
   const [open, setIsOpen] = useState(false);
   const navLinks = [
-    { href: "/", label: "Start" },
-    { href: "/oferta", label: "O nas" },
+    { href: "/AboutUs", label: "O Nas" },
+    { href: "/oferta", label: "Cos Innego" },
     { href: "/kontakt", label: "Kontakt" },
   ];
   return (
-    <header className="fixed top-0 left-0 w-full z-50 h-20 bg-[var(--panel-bg)] backdrop-blur-md border-b border-slate-200/80 shadow-sm transition-all duration-300">
+    <section className="fixed top-0 left-0 w-full z-50 h-20 bg-[var(--panel-bg)] backdrop-blur-md border-b border-slate-200/80 shadow-sm transition-all duration-300">
       <nav
         className="max-w-7xl mx-auto px-6 md:px-12 h-full flex justify-between items-center"
         aria-label="Główna nawigacja"
@@ -65,8 +66,7 @@ export const Header = () => {
       </nav>
       <nav
         className={`
-          md:hidden fixed top-20 left-0 w-full bg-[var(--header-bg)] backdrop-blur-lg
-          shadow-md border-b border-slate-200/80
+          md:hidden fixed top-20 left-0 w-full bg-[var(--garish-bg)] backdrop-blur-lg shadow-md border-b border-slate-200/80
           transition-all duration-300 z-40
           ${
             open
@@ -91,6 +91,6 @@ export const Header = () => {
           ))}
         </ul>
       </nav>
-    </header>
+    </section>
   );
 };

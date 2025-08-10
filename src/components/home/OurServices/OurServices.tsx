@@ -1,4 +1,4 @@
-import { ServiceCard } from "../../ServiceCard/ServiceCard";
+import { ServiceCard } from "../../elements/ServiceCard/ServiceCard";
 
 const services = [
   {
