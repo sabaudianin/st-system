@@ -1,11 +1,15 @@
 "use client";
-
+import { HomeCameraIcon } from "@/components/elements/HomeCameraIcon/HomeCameraIcon";
 import Link from "next/link";
 
 export const Cta = () => {
   return (
     <section className="flex flex-col items-center justify-center  text-center  relative overflow-hidden">
-      <div className=" max-w-xl w-full mx-auto p-4 rounded-2xl shadow-xl flex flex-col items-center">
+      <div className=" max-w-xl w-full mx-auto p-4 rounded-2xl shadow-xl flex flex-col items-center gap-2">
+        <HomeCameraIcon
+          height={64}
+          width={64}
+        />
         <p className="text-xl md:text-2xl text-white font-semibold mb-2 drop-shadow-[0_2px_16px_rgba(30,41,59,0.13)]">
           Zyskaj profesjonalną wycenę i
           <br />

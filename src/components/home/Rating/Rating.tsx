@@ -1,7 +1,9 @@
+import { HomeCameraIcon } from "@/components/elements/HomeCameraIcon/HomeCameraIcon";
+
 export const Rating = () => {
   return (
     <section className="bg-[var(--garish-bg)] p-4 text-center">
-      <div className="flex flex-col gap-4">
+      <div className="flex flex-col items-center gap-4">
         <div className="flex justify-center">
           {[...Array(5)].map((_, i) => (
             <span
@@ -25,6 +27,11 @@ export const Rating = () => {
           Ponad 1000 instalacji i niemal 100% zadowolonych klientów to najlepsza
           rekomendacja.
         </p>
+        <HomeCameraIcon
+          height={64}
+          width={64}
+        />
+        <span> Chroń to co najważniejsze.</span>
       </div>
     </section>
   );
