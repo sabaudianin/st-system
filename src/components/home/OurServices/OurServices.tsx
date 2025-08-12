@@ -4,13 +4,13 @@ const services = [
   {
     title: "Systemy alarmowe",
     description:
-      "Projektujemy i montujemy nowoczesne alarmy dla domów, firm i obiektów przemysłowych – zawsze indywidualnie dopasowane.",
+      "Projektujemy i montujemy nowoczesne alarmy dla domów, firm i obiektów przemysłowych zawsze indywidualnie dopasowane.",
     icon: (
       <svg
         width="32"
         height="32"
         fill="none"
-        stroke="currentColor"
+        stroke="orange"
         strokeWidth="2"
       >
         <circle
@@ -37,7 +37,7 @@ const services = [
         width="32"
         height="32"
         fill="none"
-        stroke="currentColor"
+        stroke="red"
         strokeWidth="2"
       >
         <rect
@@ -65,7 +65,7 @@ const services = [
         width="32"
         height="32"
         fill="none"
-        stroke="currentColor"
+        stroke="white"
         strokeWidth="2"
       >
         <rect
@@ -94,7 +94,7 @@ const services = [
         width="32"
         height="32"
         fill="none"
-        stroke="currentColor"
+        stroke="green"
         strokeWidth="2"
       >
         <rect
