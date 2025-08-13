@@ -9,7 +9,7 @@ export const Header = () => {
   const { isDark, toggle } = useDarkTheme();
   const [open, setIsOpen] = useState(false);
   const navLinks = [
-    { href: "/AboutUs", label: "O Nas" },
+    { href: "/oNas", label: "O Naszej Firmie" },
     { href: "/oferta", label: "Cos Innego" },
     { href: "/kontakt", label: "Kontakt" },
   ];

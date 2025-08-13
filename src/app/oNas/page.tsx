@@ -1,11 +1,11 @@
 "use client";
 
-export default function AboutUs() {
+export default function oNas() {
   return (
     <section
       id="o-nas"
-      aria-label="O nas - informacje o firmie ST System"
-      className="flex flex-col items-center text-center mx-auto px-6 py-14 mb-10 bg-[var(--panel-bg)] backdrop-glass shadow-xl animate-fade-in-up"
+      aria-label="O nas informacje o firmie ST System"
+      className="flex flex-col items-center md:justify-between justify-center text-center  mx-auto px-6 py-14  bg-[var(--panel-bg)] shadow-xl "
       tabIndex={-1}
     >
       <h2 className="text-2xl md:text-3xl font-bold mb-4">O naszej firmie:</h2>
@@ -43,10 +43,8 @@ export default function AboutUs() {
         </li>
       </ul>
       <div className="mt-8 flex flex-col md:flex-row items-center gap-4">
-        <span className="text-xl font-bold text-blue-700 dark:text-blue-200">
-          Zaufaj doświadczeniu.
-        </span>
-        <span className="text-slate-500 dark:text-slate-300">
+        <span className="text-xl font-bold  ">Zaufaj doświadczeniu.</span>
+        <span className="">
           Porozmawiajmy o bezpieczeństwie Twojego świata.
         </span>
       </div>
