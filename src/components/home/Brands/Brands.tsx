@@ -26,6 +26,15 @@ export const Brands = () => {
             className="object-contain hover:grayscale-0 transition duration-300 bg-white rounded-md p-2 shadow-sm"
           />
         </div>
+        <div className="flex flex-col items-center">
+          <Image
+            src="/dahua.svg"
+            alt="Dahua"
+            width={128}
+            height={40}
+            className="object-contain hover:grayscale-0 transition duration-300 bg-white rounded-md p-2 shadow-sm"
+          />
+        </div>
       </div>
     </section>
   );

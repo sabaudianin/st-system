@@ -10,7 +10,7 @@ export const Header = () => {
   const [open, setIsOpen] = useState(false);
   const navLinks = [
     { href: "/oNas", label: "O Naszej Firmie" },
-    { href: "/oferta", label: "Cos Innego" },
+    { href: "/realizacje", label: "Realizacje" },
     { href: "/kontakt", label: "Kontakt" },
   ];
   return (
