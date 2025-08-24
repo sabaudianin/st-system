@@ -1,12 +1,12 @@
 @import "tailwindcss";
 
 :root {
-  --background: rgb(80, 132, 193);
+  --background: rgb(212, 218, 220);
   --foreground: #222;
   --primary-dark: #1e293b;
   --fade-in-animation: fade-in 1.1s;
   --hero-overlay: rgba(45, 104, 182, 0.245);
-  --panel-bg: rgba(255, 255, 255, 0.85);
+  --panel-bg: rgba(200, 217, 229, 0.85);
   --garish-bg: #1865e2;
 }
 body {
