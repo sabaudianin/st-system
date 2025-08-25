@@ -18,12 +18,12 @@ export default function RootLayout({
       lang="pl"
       className={inter.variable}
     >
-      <body className="bg-[var(--background)] text-[var(--foreground)] font-sans antialiased">
+      <body className="min-h-screen flex flex-col bg-[var(--background)] text-[var(--foreground)] font-sans antialiased">
         <SkipToContent />
         <Header />
         <main
           id="main"
-          className="min-h-screen  pt-20 "
+          className="flex-1 pt-20 "
         >
           {children}
         </main>

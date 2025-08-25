@@ -3,7 +3,7 @@
 :root {
   --background: rgb(212, 218, 220);
   --foreground: #222;
-  --primary-dark: #1e293b;
+  --primary-dark: #d3d3d6;
   --fade-in-animation: fade-in 1.1s;
   --hero-overlay: rgba(45, 104, 182, 0.245);
   --panel-bg: rgba(200, 217, 229, 0.85);
@@ -20,6 +20,7 @@ body {
   --foreground: #e7e7e7;
   --hero-overlay: rgba(0, 0, 0, 0.5);
   --panel-bg: rgba(17, 24, 39, 0.93);
+  --primary-dark: #1e293b;
 }
 .bg-primary-dark {
   background-color: var(--primary-dark);

@@ -5,13 +5,13 @@ export default function oNas() {
     <section
       id="o-nas"
       aria-label="O nas informacje o firmie ST System"
-      className="flex flex-col items-center md:justify-between justify-center text-center  mx-auto px-6 py-14  bg-[var(--panel-bg)] shadow-xl "
+      className="flex flex-col md:h-screen items-center justify-center text-center mx-auto px-6 py-14 bg-primary-dark shadow-xl "
       tabIndex={-1}
     >
       <h2 className="text-2xl md:text-3xl font-bold mb-4">O naszej firmie:</h2>
       <p className="text-lg md:text-xl mb-6 font-semibold text-[var(--foreground)]">
         Twój spokój to nasza misja.
-        <br className="hidden md:inline" />
+        <br />
         <span className="text-red-600  font-bold">ST System</span>
         &nbsp; doświadczenie, które procentuje bezpieczeństwem.
       </p>

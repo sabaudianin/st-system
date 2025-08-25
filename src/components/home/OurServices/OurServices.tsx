@@ -116,25 +116,27 @@ const services = [
   },
 ];
 
-export const OurServices = () => (
-  <section
-    className="w-full py-12 px-4 flex flex-col items-center bg-slate-50 dark:bg-slate-800"
-    id="uslugi"
-  >
-    <h3 className="text-2xl md:text-3xl font-bold text-slate-700 dark:text-white mb-10 animate-fade-in-up">
-      Nasze usługi
-    </h3>
-    {services.map((service, i) => (
-      <ServiceCard
-        key={service.title}
-        {...service}
-        motionProps={{
-          initial: { opacity: 0, scale: 0.95, y: 40 },
-          whileInView: { opacity: 1, scale: 1, y: 0 },
-          transition: { duration: 0.7, ease: "easeOut", delay: i * 0.18 },
-          viewport: { once: true, amount: 0.2 },
-        }}
-      />
-    ))}
-  </section>
-);
+export const OurServices = () => {
+  return (
+    <section
+      className="w-full py-12 px-4 flex flex-col items-center bg-primary-dark"
+      id="uslugi"
+    >
+      <h3 className="text-2xl md:text-3xl font-bold mb-10 animate-fade-in-up">
+        Nasze usługi
+      </h3>
+      {services.map((service, i) => (
+        <ServiceCard
+          key={service.title}
+          {...service}
+          motionProps={{
+            initial: { opacity: 0, scale: 0.95, y: 40 },
+            whileInView: { opacity: 1, scale: 1, y: 0 },
+            transition: { duration: 0.7, ease: "easeOut", delay: i * 0.18 },
+            viewport: { once: true, amount: 0.2 },
+          }}
+        />
+      ))}
+    </section>
+  );
+};

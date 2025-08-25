@@ -3,9 +3,9 @@ import Image from "next/image";
 
 export const Brands = () => {
   return (
-    <section className="w-full py-4 px-4 md:px-0 flex flex-col items-center bg-background">
-      <h3 className="text-xl md:text-2xl font-bold py-8 animate-fade-in">
-        Twój spokój, najlepsza technologia:
+    <section className="w-full py-4 px-4 md:px-0 flex flex-col items-center  bg-[var(--hero-overlay)] ">
+      <h3 className="text-xl md:text-2xl font-bold py-8 animate-fade-in text-center">
+        Zaufaj dostawcom najlepszej technologi:
       </h3>
       <div className="flex flex-wrap justify-center items-center gap-8 md:gap-16 w-full max-w-3xl animate-fade-in-up">
         <div className="flex flex-col items-center">
