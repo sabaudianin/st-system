@@ -1,53 +1,78 @@
 "use client";
 
-import Link from "next/link";
+import type { FC } from "react";
 
-export const Cta = () => {
+export const Cta: FC = () => {
+  const phone = "+48 123 456 789";
+  const telHref = "tel:+48123456789";
+
   return (
-    <section className="flex flex-col items-center justify-center py-4 text-center relative overflow-hidden ">
-      <div className="max-w-xl w-full mx-auto p-4 flex flex-col items-center gap-2">
-        <p className="text-xl md:text-2xl text-white font-semibold mb-2 drop-shadow-[0_2px_16px_rgba(30,41,59,0.13)]">
-          Zyskaj profesjonalną wycenę i
-          <br />
-          <span className="font-extrabold">indywidualne doradztwo.</span>
-        </p>
-        <Link href="#oferta">
-          <button
-            className="relative flex items-center gap-2 px-10 py-4 rounded-full font-extrabold text-lg bg-gradient-to-r from-blue-800 via-blue-600 to-blue-400 text-white shadow-xl gradient-animate cta-glow
-            hover:from-blue-900 hover:via-blue-700 hover:to-blue-500 hover:scale-105 active:scale-95 transition-all duration-400 group mt-6"
-            aria-label="Zamów wycenę"
+    <section
+      id="cta"
+      aria-labelledby="cta-title"
+      className="cta-animated-bg relative overflow-hidden flex flex-col items-center justify-center py-12 text-center"
+    >
+      <div className="max-w-xl w-full mx-auto px-6 flex flex-col items-center gap-4">
+        <h2
+          id="cta-title"
+          className="text-2xl md:text-3xl font-extrabold text-white drop-shadow-[0_2px_16px_rgba(0,0,0,0.35)]"
+        >
+          Zyskaj profesjonalną wycenę i{" "}
+          <span className="font-black">indywidualne doradztwo.</span>
+        </h2>
+
+        <a
+          href={telHref}
+          role="button"
+          className="relative inline-flex items-center gap-2 px-10 py-4 mt-2 rounded-full
+font-extrabold text-lg text-white shadow-xl
+bg-gradient-to-r from-blue-800 via-blue-600 to-blue-500
+transition-all duration-300
+hover:from-blue-900 hover:via-blue-700 hover:to-blue-600
+hover:scale-105 active:scale-95 gradient-animate cta-glow focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-400"
+          aria-label={`Zadzwoń teraz: ${phone}`}
+        >
+          Zadzwoń teraz
+          <svg
+            className="w-6 h-6 ml-2 arrow-anim"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth={3}
+            aria-hidden="true"
           >
-            Zamów wycenę
-            <svg
-              className="w-6 h-6 ml-2 arrow-anim"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth={3}
-              viewBox="0 0 24 24"
-            >
-              <path
-                d="M5 12h14M12 5l7 7-7 7"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              />
-            </svg>
-            <span
-              className="absolute -z-10 inset-0 rounded-full pointer-events-none"
-              style={{
-                boxShadow:
-                  "0 0 36px 8px rgba(37,99,235,0.13), 0 4px 24px 0 #0001",
-                filter: "blur(2px) opacity(.56)",
-              }}
+            <path
+              d="M5 12h14M12 5l7 7-7 7"
+              strokeLinecap="round"
+              strokeLinejoin="round"
             />
-          </button>
-        </Link>
-        <span className="text-xs  mt-2 flex items-center gap-1 tracking-wide">
+          </svg>
+          <span
+            aria-hidden="true"
+            className="absolute -z-10 inset-0 rounded-full pointer-events-none"
+            style={{
+              boxShadow:
+                "0 0 36px 8px rgba(37,99,235,0.13), 0 4px 24px 0 #0001",
+              filter: "blur(2px) opacity(.56)",
+            }}
+          />
+        </a>
+
+        <p className="text-sm text-blue-100/95">
+          Bezpośredni kontakt: <span className="font-semibold">{phone}</span>
+        </p>
+
+        <span
+          className="text-xs text-blue-100/90 mt-1 flex items-center gap-1 tracking-wide"
+          aria-live="polite"
+        >
           <svg
             className="w-4 h-4 animate-pulse"
+            viewBox="0 0 24 24"
             fill="none"
             stroke="currentColor"
             strokeWidth={2}
-            viewBox="0 0 24 24"
+            aria-hidden="true"
           >
             <circle
               cx="12"
@@ -56,7 +81,7 @@ export const Cta = () => {
               strokeDasharray="2 2"
             />
           </svg>
-          <span>Bezpośredni kontakt i szybka odpowiedź</span>
+          <span>Odbieramy szybko — doradzimy i wycenimy.</span>
         </span>
       </div>
     </section>

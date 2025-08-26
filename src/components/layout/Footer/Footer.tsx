@@ -3,7 +3,7 @@ import { Logo } from "../../elements/logo/Logo";
 
 export const Footer = () => (
   <footer
-    className="flex flex-col items-center gap-5 md:gap-6 py-8 px-4 text-center text-sm border-t border-slate-200/80 bg-[var(--panel-bg)] w-full"
+    className="flex flex-col items-center gap-5 md:gap-6 py-8 px-4 text-center text-sm border-t border-slate-200/80 bg-[var(--panel)] w-full"
     aria-label="Stopka strony"
   >
     <Logo />

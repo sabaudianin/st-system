@@ -4,7 +4,7 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://st-system.pl"),
   title: "ST System",
   description:
-    "Profesjonalny montaż systemów monitoringu, alarmów i zabezpieczeń. Nowoczesne rozwiązania dla domu i firmy. Szybka wycena i fachowa instalacja – skontaktuj się z nami!",
+    "Profesjonalny montaż systemów monitoringu, alarmów i zabezpieczeń. Nowoczesne rozwiązania dla domu i firmy. Szybka wycena i fachowa instalacja-skontaktuj się z nami!",
   robots: {
     index: true,
     follow: true,
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "ST System",
     description:
-      "Monitoring, alarmy i zabezpieczenia – dla domu i firmy. Szybka wycena i fachowa instalacja.",
+      "Monitoring, alarmy i zabezpieczenia dla domu i firmy. Szybka wycena i fachowa instalacja.",
     url: "https://st-system.pl",
     siteName: "ST System",
     images: [
