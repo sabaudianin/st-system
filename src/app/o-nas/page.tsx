@@ -1,4 +1,5 @@
 "use client";
+import { Logo } from "@/components/elements/logo/Logo";
 
 export default function oNas() {
   return (
@@ -20,15 +21,15 @@ export default function oNas() {
         <span className="font-bold ">18 lat &nbsp;</span>
         pomagamy chronić to, co najcenniejsze. Wdrażamy systemy alarmowe,
         monitoring oraz sieci dla domów, firm i instytucji.
-        <span className="block md:inline">
+        <span className="block">
           Stawiamy na najnowsze technologie, sprawdzonych partnerów i
           indywidualne podejście.
         </span>
       </p>
-      <p className="text-base italic mb-2 text-gray-700 ">
+      <p className="text-base italic mb-2 text-blue-700 ">
         „Dbamy o każdy szczegół, bo Twoje bezpieczeństwo nie zna kompromisów.”
       </p>
-      <ul className="flex flex-wrap justify-center gap-4 mt-4 text-sm font-semibold text-slate-600 dark:text-slate-200">
+      <ul className="flex flex-wrap justify-center gap-4 mt-4 text-sm font-semibold ">
         <li className="px-4 py-1 bg-blue-100/70 dark:bg-blue-900/40">
           Certyfikowane systemy
         </li>
@@ -42,11 +43,14 @@ export default function oNas() {
           Gwarancja satysfakcji
         </li>
       </ul>
-      <div className="mt-8 flex flex-col md:flex-row items-center gap-4">
-        <span className="text-xl font-bold  ">Zaufaj doświadczeniu.</span>
-        <span className="">
+      <div className="flex flex-col items-center justify-center py-8">
+        <span className="text-xl font-bold  ">
+          Zaufaj naszemu doświadczeniu.
+        </span>
+        <span className="block py-8">
           Porozmawiajmy o bezpieczeństwie Twojego świata.
         </span>
+        <Logo />
       </div>
     </section>
   );

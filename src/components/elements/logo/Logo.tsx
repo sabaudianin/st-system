@@ -5,7 +5,7 @@ export const Logo = () => {
     <Link
       href="/"
       aria-label="Strona główna ST System"
-      className="flex items-center gap-3 text-xl font-extrabold tracking-tight text-[var(--foreground)]"
+      className="flex items-center gap-3 text-xl font-extrabold tracking-tight text-white"
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"

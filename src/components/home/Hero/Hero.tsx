@@ -4,7 +4,7 @@ import { HomeCameraIcon } from "@/components/elements/HomeCameraIcon/HomeCameraI
 import Image from "next/image";
 
 export const Hero = () => (
-  <section className="relative w-full h-[500px] rounded overflow-hidden text-white">
+  <section className="relative w-full h-[500px] overflow-hidden text-white">
     <div className="absolute inset-0">
       <Image
         src="/hero.jpg"
