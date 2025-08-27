@@ -21,7 +21,7 @@ export const Hero: React.FC = () => (
     <div className="relative z-10 mx-auto flex h-full max-w-7xl flex-col items-center justify-center gap-4 px-6 py-10 text-center">
       <h2
         id="hero-title"
-        className="text-3xl font-extrabold drop-shadow md:text-5xl animate-fade-in-up"
+        className="text-xl font-extrabold drop-shadow md:text-5xl animate-fade-in-up"
       >
         Nowoczesne rozwiązania dla Twojego bezpieczeństwa.
       </h2>

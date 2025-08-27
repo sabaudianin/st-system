@@ -1,16 +1,13 @@
 @import "tailwindcss";
-/* (opcjonalnie) pluginy v4 wprost w CSS */
+
 @plugin "@tailwindcss/forms";
 @plugin "@tailwindcss/typography";
 @plugin "@tailwindcss/aspect-ratio";
 
-/* Ustal kolejność warstw (nie obejmuje @theme!) */
 @layer base, components, utilities;
 
-/* UWAGA: theme.css BEZ layer(...) – @theme musi być na root level */
 @import "./theme.css";
 
-/* Reszta już może być layerowane */
 @import "./tokens.css" layer(base);
 @import "./base.css" layer(base);
 @import "./a11y.css" layer(base);

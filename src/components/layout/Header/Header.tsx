@@ -5,6 +5,8 @@ import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { useDarkTheme } from "@/hooks/useDarkTheme/useDarkTheme";
 import { Logo } from "@/components/elements/logo/Logo";
+import { SunIcon } from "@/components/icons/SunIcon/SunICon";
+import { MoonIcon } from "@/components/icons/MoonIcon/MoonIcon";
 
 type NavLink = { href: string; label: string };
 
@@ -20,14 +22,11 @@ export const Header: React.FC = () => {
   const pathname = usePathname();
   const menuId = "mobile-menu";
 
-  // aktywność linku (obsługa podstron /foo/bar)
   const isActive = (href: string) =>
     pathname === href || (href !== "/" && pathname.startsWith(href + "/"));
 
-  // Zamknij menu po nawigacji
   useEffect(() => setOpen(false), [pathname]);
 
-  // Zablokuj scroll tła przy otwartym menu
   useEffect(() => {
     if (typeof document === "undefined") return;
     const { body } = document;
@@ -45,16 +44,8 @@ export const Header: React.FC = () => {
   return (
     <header
       role="banner"
-      className="fixed inset-x-0 top-0 z-50 h-20 bg-background/70 md:bg-background/60 supports-[backdrop-filter]:backdrop-blur border-b border-[var(--border)] shadow-sm transition-all duration-300"
+      className="fixed inset-x-0 top-0 z-50 h-20 bg-background/70 md:bg-background/60 supports-[backdrop-filter:blur(0)]:backdrop-blur border-b border-[var(--border)] shadow-sm transition-all duration-300"
     >
-      {/* Skip link dla klawiatury */}
-      <a
-        href="#main"
-        className="sr-only sr-only-focusable"
-      >
-        Przejdź do treści
-      </a>
-
       <nav
         className="mx-auto flex h-full max-w-7xl items-center justify-between px-6 md:px-12"
         aria-label="Główna nawigacja"
@@ -62,18 +53,35 @@ export const Header: React.FC = () => {
         <Logo />
 
         <div className="flex items-center gap-2 md:gap-4">
-          {/* Przełącznik motywu – korzysta z tokenów kolorów */}
           <button
             type="button"
             onClick={toggle}
-            className="inline-flex items-center rounded-md px-3 py-2 text-sm font-semibold text-foreground/90 hover:bg-foreground/5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent motion-reduce:transition-none"
+            className="inline-flex items-center rounded-md p-2 text-sm font-semibold text-foreground/90 hover:bg-foreground/5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent motion-reduce:transition-none"
             aria-pressed={isDark}
             aria-label={
               isDark ? "Przełącz na jasny motyw" : "Przełącz na ciemny motyw"
             }
             title={isDark ? "Jasny motyw" : "Ciemny motyw"}
           >
-            {isDark ? "Jasny motyw" : "Ciemny motyw"}
+            <span className="relative inline-grid place-items-center">
+              <SunIcon
+                className={`h-5 w-5 transition-all duration-200 motion-reduce:transition-none ${
+                  isDark
+                    ? "scale-0 opacity-0 rotate-90"
+                    : "scale-100 opacity-100 rotate-0"
+                }`}
+              />
+              <MoonIcon
+                className={`absolute h-5 w-5 transition-all duration-200 motion-reduce:transition-none ${
+                  isDark
+                    ? "scale-100 opacity-100 rotate-0"
+                    : "scale-0 opacity-0 -rotate-90"
+                }`}
+              />
+            </span>
+            <span className="sr-only">
+              {isDark ? "Jasny motyw" : "Ciemny motyw"}
+            </span>
           </button>
 
           {/* Desktop nav */}
@@ -122,7 +130,7 @@ export const Header: React.FC = () => {
       {/* Mobile menu */}
       <div
         id={menuId}
-        className={`md:hidden fixed left-0 top-20 z-40 w-full overflow-hidden border-b border-[var(--border)] bg-background/95 supports-[backdrop-filter]:backdrop-blur shadow-md transition-[max-height,opacity] duration-300 ${
+        className={`md:hidden fixed left-0 top-20 z-40 w-full overflow-hidden border-b border-[var(--border)] bg-background/95 supports-[backdrop-filter:blur(0)]:backdrop-blur shadow-md transition-[max-height,opacity] duration-300 ${
           open
             ? "max-h-60 opacity-100"
             : "pointer-events-none max-h-0 opacity-0"
@@ -151,11 +159,10 @@ export const Header: React.FC = () => {
         </ul>
       </div>
 
-      {/* Overlay do zamknięcia menu */}
       {open && (
-        <button
-          type="button"
-          aria-label="Zamknij menu"
+        <div
+          role="presentation"
+          aria-hidden="true"
           className="md:hidden fixed inset-0 top-20 z-30 bg-black/10 backdrop-blur-[1px]"
           onClick={() => setOpen(false)}
         />
