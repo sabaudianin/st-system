@@ -1,0 +1,70 @@
+html {
+  color-scheme: light dark;
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  * {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+
+body {
+  background-color: var(--surface);
+  color: var(--surface-contrast);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  text-wrap: pretty;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+::selection {
+  background: color-mix(in oklab, var(--color-accent) 25%, transparent);
+  color: var(--surface-contrast);
+}
+
+/* Anchor offset pod fixed header */
+h2,
+h3,
+h4,
+h5,
+h6,
+[id] {
+  scroll-margin-top: 5.5rem;
+}
+h1,
+h2 {
+  text-wrap: balance;
+}
+
+/* Długie łańcuchy */
+.prose,
+.copy,
+p,
+li {
+  overflow-wrap: break-word;
+}
+
+/* Media responsywne */
+img,
+video,
+canvas,
+svg {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Wyróżnienie celu po #hash */
+:target {
+  outline: 2px dashed color-mix(in oklab, var(--color-accent) 60%, transparent);
+  outline-offset: 0.25rem;
+}

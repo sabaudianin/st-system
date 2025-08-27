@@ -1,0 +1,63 @@
+/* Panel komponentowy */
+.ui-panel {
+  background: var(--panel);
+  color: var(--panel-contrast);
+  box-shadow: var(--shadow-md);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+}
+
+/* CTA tło z animacją gradientu sterowaną tokenami */
+.ui-cta-animated-bg {
+  background-image: linear-gradient(
+    120deg,
+    var(--cta-bg-1) 0%,
+    var(--cta-bg-2) 60%,
+    var(--cta-bg-3) 100%
+  );
+  background-size: 200% 200%;
+  will-change: background-position;
+  animation: var(--animate-bg-gradient-move);
+}
+@media (prefers-reduced-motion: reduce) {
+  .ui-cta-animated-bg {
+    animation: none;
+  }
+}
+
+/* Szkło/blur */
+.ui-backdrop-glass {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(14px) saturate(120%);
+  -webkit-backdrop-filter: blur(14px) saturate(120%);
+  border: 1.5px solid rgba(100, 116, 139, 0.16);
+  box-shadow: 0 4px 32px 0 rgba(30, 41, 59, 0.12);
+}
+@media (max-width: 640px) {
+  .ui-backdrop-glass {
+    background: rgba(255, 255, 255, 0.9);
+  }
+}
+
+/* Alias(y) zachowujące kompatybilność – możesz je usunąć po migracji */
+.cta-glow {
+  animation: var(--animate-cta-glow);
+}
+.arrow-anim {
+  animation: var(--animate-arrow-move);
+}
+.svg-moving-bg {
+  animation: var(--animate-svg-move);
+}
+.animate-fade-in {
+  animation: var(--animate-fade-in);
+}
+.animate-fade-in-up {
+  animation: var(--animate-fade-in-up);
+}
+.animate-fade-in-left {
+  animation: var(--animate-fade-in-left);
+}
+.animate-fade-in-right {
+  animation: var(--animate-fade-in-right);
+}

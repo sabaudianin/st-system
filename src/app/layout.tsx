@@ -1,4 +1,4 @@
-import "../styles/globals.css";
+import "@/styles/globals.css";
 import { inter } from "@/lib/fonts";
 import { viewport } from "@/config/viewport";
 import { metadata } from "@/config/metadata";
@@ -19,7 +19,8 @@ export default function RootLayout({
       className={inter.variable}
       suppressHydrationWarning
     >
-      <body className="min-h-screen flex flex-col bg-[var(--background)] text-[var(--foreground)] font-sans antialiased">
+      <body className="min-h-dvh flex flex-col bg-background text-foreground font-sans antialiased">
+        {/* Skip link centralnie w layoutcie (jeśli zostawiasz, usuń duplikat z Headera) */}
         <SkipToContent />
 
         <Header />
