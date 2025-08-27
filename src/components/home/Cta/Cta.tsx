@@ -25,35 +25,38 @@ export const Cta: FC = () => {
 
         <a
           href={telHref}
-          className="group relative inline-flex items-center gap-2 rounded-full px-8 py-4 text-lg font-extrabold text-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent animate-fade-in-up 
-          "
+          className="group relative inline-flex items-center gap-3 rounded-full px-8 py-4 text-lg font-extrabold  transition-transform duration-200 hover:translate-x-0.5 active:scale-95 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent animate-fade-in-up"
           aria-label={`Zadzwoń teraz: ${phone}`}
           aria-describedby="cta-note"
           itemProp="telephone"
         >
           <span
-            className="absolute inset-0 -z-10 rounded-full bg-accent animate-cta-glow"
+            className="absolute inset-0 -z-10 rounded-full border-success border-4 "
             aria-hidden
           />
-          Zadzwoń teraz
-          <svg
-            className="ml-2 h-6 w-6 transition-transform group-hover:animate-arrow-move"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth={3}
-            aria-hidden="true"
-          >
-            <path
-              d="M5 12h14M12 5l7 7-7 7"
+
+          <span className="relative z-10">Zadzwoń teraz</span>
+
+          <span className="relative z-10 inline-grid h-6 w-6 place-items-center text-success">
+            <span
+              aria-hidden="true"
+              className="absolute inset-0 rounded-full bg-success/60 animate-[ping_1.2s_ease-out_infinite]"
+            />
+
+            <svg
+              className="relative h-5 w-5"
+              viewBox="0 0 24 24"
+              fill="green"
+              stroke="currentColor"
+              strokeWidth={2}
               strokeLinecap="round"
               strokeLinejoin="round"
-            />
-          </svg>
-          <span
-            aria-hidden="true"
-            className="pointer-events-none absolute inset-0 -z-20 rounded-full blur-sm opacity-60"
-          />
+              aria-hidden="true"
+              focusable="false"
+            >
+              <path d="M22 16.92v2.5a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3.07-8.63A2 2 0 0 1 4.62 1h2.5a2 2 0 0 1 2 1.72c.12.9.34 1.77.65 2.6a2 2 0 0 1-.45 2.11L8.2 8.55a16 16 0 0 0 7.25 7.25l1.12-1.12a2 2 0 0 1 2.11-.45c.83.31 1.7.53 2.6.65A2 2 0 0 1 22 16.92Z" />
+            </svg>
+          </span>
         </a>
 
         <p
@@ -88,7 +91,7 @@ export const Cta: FC = () => {
               strokeDasharray="2 2"
             />
           </svg>
-          <span>Odbieramy szybko — doradzimy i wycenimy.</span>
+          <span>Szybka odpowiedź — doradzimy i wycenimy.</span>
         </span>
       </div>
     </section>
