@@ -88,7 +88,7 @@ const services = [
   {
     title: "Kontrola dostępu",
     description:
-      "Systemy kontroli wejścia, karty RFID, czytniki, automatyczne bramy – bezpieczeństwo i wygoda w jednym.",
+      "Systemy kontroli wejścia, karty RFID, czytniki, automatyczne bramy-bezpieczeństwo i wygoda w jednym.",
     icon: (
       <svg
         width="32"
