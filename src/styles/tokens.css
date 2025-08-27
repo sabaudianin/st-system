@@ -3,6 +3,16 @@
   --surface: var(--color-background);
   --surface-contrast: var(--color-foreground);
   --border: color-mix(in oklab, #0f172a 12%, transparent);
+  --border-weak: color-mix(
+    in oklab,
+    var(--color-foreground) 12%,
+    transparent
+  ); /* separator */
+  --border-strong: color-mix(
+    in oklab,
+    var(--color-foreground) 47%,
+    transparent
+  );
   --muted: var(--color-muted);
 
   /* Kompozycje */
@@ -13,7 +23,7 @@
   --panel-contrast: #0f172a;
 
   /* Ring / cienie / promienie */
-  --ring: 0 0 0 3px color-mix(in oklab, var(--color-accent) 35%, transparent);
+  --ring: 0 0 0 2px color-mix(in oklab, var(--color-accent) 100%, transparent);
   --shadow-sm: 0 1px 2px rgba(2, 6, 23, 0.06);
   --shadow-md: 0 4px 24px rgba(2, 6, 23, 0.1);
   --shadow-lg: 0 8px 40px rgba(2, 6, 23, 0.12);
@@ -21,8 +31,8 @@
   --radius-lg: 1rem;
 
   /* CTA gradient + glow */
-  --cta-glow-start: rgba(37, 99, 235, 0.28);
-  --cta-glow-mid: rgba(99, 102, 241, 0.42);
+  --cta-glow-start: rgba(67, 122, 240, 0.827);
+  --cta-glow-mid: rgba(61, 147, 240, 0.97);
   --cta-bg-1: #e9eef5;
   --cta-bg-2: #cfd9ea;
   --cta-bg-3: #b7c7e4;
@@ -34,4 +44,11 @@
   --surface-contrast: var(--color-foreground);
   --panel: rgba(17, 24, 39, 0.93);
   --panel-contrast: #e5e7eb;
+  --ring: 0 0 0 2px color-mix(in oklab, var(--color-accent) 100%, transparent);
+  --border-weak: color-mix(in oklab, var(--color-foreground) 16%, transparent);
+  --border-strong: color-mix(
+    in oklab,
+    var(--color-foreground) 37%,
+    transparent
+  );
 }

@@ -20,7 +20,6 @@ export default function RootLayout({
       suppressHydrationWarning
     >
       <body className="min-h-dvh flex flex-col bg-background text-foreground font-sans antialiased">
-        {/* Skip link centralnie w layoutcie (jeśli zostawiasz, usuń duplikat z Headera) */}
         <SkipToContent />
 
         <Header />
