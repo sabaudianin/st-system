@@ -4,6 +4,7 @@ import { Brands } from "@/components/home/Brands/Brands";
 import { OurServices } from "@/components/home/OurServices/OurServices";
 import { Rating } from "@/components/home/Rating/Rating";
 import { ServiceList } from "@/components/elements/ServiceList/ServiceList";
+import { SecurityNetwork } from "@/components/home/SecurityNetwork/SecurityNetwork";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <Brands />
       <OurServices />
       <Rating />
+      <SecurityNetwork />
     </>
   );
 }
