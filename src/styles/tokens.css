@@ -1,5 +1,4 @@
 :root {
-  /* Semantyka oparta na tokenach z @theme */
   --surface: var(--color-background);
   --surface-contrast: var(--color-foreground);
   --border: color-mix(in oklab, #0f172a 12%, transparent);
@@ -51,4 +50,5 @@
     var(--color-foreground) 37%,
     transparent
   );
+  --garish-bg: #1b4cc8;
 }

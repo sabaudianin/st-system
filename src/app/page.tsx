@@ -14,8 +14,8 @@ export default function Home() {
       <ServiceList />
       <Brands />
       <OurServices />
-      <Rating />
       <SecurityNetwork />
+      <Rating />
     </>
   );
 }
