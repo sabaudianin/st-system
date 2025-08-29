@@ -19,8 +19,7 @@ export const Cta: FC = () => {
           id="cta-title"
           className="text-2xl font-extrabold md:text-3xl drop-shadow"
         >
-          Zyskaj profesjonalną wycenę i
-          <span className="font-black">indywidualne doradztwo.</span>
+          Zyskaj profesjonalną wycenę i indywidualne doradztwo.
         </h2>
 
         <a

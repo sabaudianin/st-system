@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { Logo } from "../../elements/logo/Logo";
 
 export const Footer = () => (
@@ -26,11 +25,11 @@ export const Footer = () => (
       </a>
     </div>
 
-    <address className="not-italic text-xs text-slate-500">
+    <address className="not-italic text-xs ">
       ul. Świętego Mikołaja 6, 05-510 Chylice, Piaseczno
     </address>
 
-    <span className="text-xs text-slate-400">
+    <span className="text-xs ">
       &copy; {new Date().getFullYear()} ST-System Sławomir Tomala. Wszelkie
       prawa zastrzeżone.
     </span>

@@ -1,5 +1,5 @@
 "use client";
-import Image from "next/image";
+
 import {
   motion,
   type Variants,
@@ -55,7 +55,6 @@ export const Rating = () => {
                 animate-star-glint motion-reduce:animate-none
                 [will-change:transform,filter]
               "
-              // lekkie zróżnicowanie fazy błysku
               style={{ animationDelay: `${i * 0.18}s` }}
               whileHover={reduce ? undefined : { scale: 1.15 }}
               transition={{ type: "spring", stiffness: 300, damping: 18 }}
@@ -74,7 +73,7 @@ export const Rating = () => {
         </motion.ul>
 
         <p className="font-semibold text-foreground/95 drop-shadow">
-          Ponad 1000 instalacji i niemal 100% zadowolonych klientów — to
+          Ponad 1000 instalacji i niemal 100% zadowolonych klientów - to
           najlepsza rekomendacja.
         </p>
       </div>

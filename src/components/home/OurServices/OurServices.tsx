@@ -249,7 +249,7 @@ export const OurServices: React.FC = () => {
           Nasze usługi
         </h2>
 
-        <p className="mx-auto mb-10 max-w-2xl text-center text-foreground/90">
+        <p className="mx-auto mb-10 max-w-2xl text-center text-foreground/90 font-semibold">
           Kompleksowo projektujemy i wdrażamy systemy bezpieczeństwa: od kamer i
           alarmów, przez sieć i kontrolę dostępu, po zdalny podgląd i
           zarządzanie w aplikacji.
