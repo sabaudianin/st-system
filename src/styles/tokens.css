@@ -1,5 +1,4 @@
 :root {
-  /* Semantyka oparta na tokenach z @theme */
   --surface: var(--color-background);
   --surface-contrast: var(--color-foreground);
   --border: color-mix(in oklab, #0f172a 12%, transparent);
@@ -18,8 +17,8 @@
   /* Kompozycje */
   --primary-dark: #0f172a;
   --hero-overlay: rgba(45, 104, 182, 0.25);
-  --garish-bg: #1865e2;
-  --panel: rgba(140, 185, 218, 0.85);
+  --garish-bg: #3276e2;
+  --panel: rgba(84, 159, 213);
   --panel-contrast: #0f172a;
 
   /* Ring / cienie / promienie */
@@ -51,4 +50,5 @@
     var(--color-foreground) 37%,
     transparent
   );
+  --garish-bg: #1b4cc8;
 }

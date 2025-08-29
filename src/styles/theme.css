@@ -23,8 +23,28 @@
   --animate-svg-move: svg-move 10s linear infinite alternate;
 
   --animate-cta-glow: cta-glow 2.2s cubic-bezier(0.86, 0, 0.07, 1) infinite;
+  --animate-star-glint: star-glint 1.6s ease-in-out infinite;
 
   /* ====== Keyframes ====== */
+  @keyframes star-glint {
+    0%,
+    100% {
+      transform: scale(1);
+      filter: drop-shadow(
+        0 0 0px color-mix(in oklab, var(--color-warning) 0%, transparent)
+      );
+      opacity: 1;
+    }
+    50% {
+      transform: scale(1.12);
+      /* ciepły glow bazujący na warning */
+      filter: drop-shadow(
+        0 0 8px color-mix(in oklab, var(--color-warning) 80%, transparent)
+      );
+      opacity: 1;
+    }
+  }
+
   @keyframes fade-in {
     from {
       opacity: 0;
