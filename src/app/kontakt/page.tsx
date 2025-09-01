@@ -50,10 +50,6 @@ export default function Contact() {
             </address>
           </li>
         </ul>
-
-        <p className="mt-8 text-sm text-slate-500 dark:text-slate-400 italic">
-          „Dbamy o każdy szczegół, bo Twoje bezpieczeństwo nie zna kompromisów.”
-        </p>
       </div>
 
       <div

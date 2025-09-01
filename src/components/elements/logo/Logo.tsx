@@ -9,7 +9,7 @@ type LogoProps = {
 
 export const Logo: React.FC<LogoProps> = ({
   withText = true,
-  brand = "ST System",
+  brand = "ST-System",
   size = 52,
   className = "",
 }) => {

@@ -9,7 +9,7 @@ export const Cta: FC = () => {
     <section
       id="cta"
       aria-labelledby="cta-title"
-      className="relative isolate overflow-hidden py-12 text-center text-foreground "
+      className="relative isolate overflow-hidden py-12 text-center text-foreground bg-[var(--panel-light)] "
       itemScope
       itemType="https://schema.org/LocalBusiness"
       role="region"
@@ -34,7 +34,7 @@ export const Cta: FC = () => {
             aria-hidden
           />
 
-          <span className="relative z-10">Zadzwoń teraz</span>
+          <span className="relative z-10">Zamów wycenę</span>
 
           <span className="relative z-10 inline-grid h-6 w-6 place-items-center text-success">
             <span
