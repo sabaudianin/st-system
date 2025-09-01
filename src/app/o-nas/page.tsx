@@ -6,14 +6,14 @@ export default function oNas() {
     <section
       id="o-nas"
       aria-label="O nas informacje o firmie ST System"
-      className="flex flex-col md:h-screen items-center justify-center text-center mx-auto px-6 py-14 bg-primary-dark shadow-xl "
+      className="flex flex-col md:h-screen items-center justify-center text-center mx-auto px-6 py-14 shadow-xl "
       tabIndex={-1}
     >
       <h2 className="text-2xl md:text-3xl font-bold mb-4">O naszej firmie:</h2>
       <p className="text-lg md:text-xl mb-6 font-semibold text-[var(--foreground)]">
         Twój spokój to nasza misja.
         <br />
-        <span className="text-red-600  font-bold">ST System</span>
+        <span className="text-2xl font-bold">ST-System</span>
         &nbsp; doświadczenie, które procentuje bezpieczeństwem.
       </p>
       <p className="text-base md:text-lg mb-5 max-w-2xl text-[var(--foreground)]">
@@ -26,7 +26,7 @@ export default function oNas() {
           indywidualne podejście.
         </span>
       </p>
-      <p className="text-base italic mb-2 text-blue-700 ">
+      <p className="text-base italic mb-2 ">
         „Dbamy o każdy szczegół, bo Twoje bezpieczeństwo nie zna kompromisów.”
       </p>
       <ul className="flex flex-wrap justify-center gap-4 mt-4 text-sm font-semibold ">
@@ -50,7 +50,7 @@ export default function oNas() {
         <span className="block py-8">
           Porozmawiajmy o bezpieczeństwie Twojego świata.
         </span>
-        <Logo />
+        <span className="text-2xl font-bold  ">Wybierz ST-System.</span>
       </div>
     </section>
   );

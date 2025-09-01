@@ -13,9 +13,13 @@ export const ServiceList = () => {
   return (
     <section
       aria-label="Etapy naszej pracy"
-      className="relative max-w-3xl mx-auto py-4"
+      role="region"
+      className="relative  mx-auto py-4 bg-[var(--panel-light)]"
     >
-      <ul className="flex flex-col items-center justify-center gap-8 font-semibold p-2">
+      <ul
+        role="list"
+        className="flex flex-col items-center justify-center gap-8 font-semibold p-2"
+      >
         {services.map((item, i) => (
           <motion.li
             key={i}
@@ -35,8 +39,14 @@ export const ServiceList = () => {
         ))}
       </ul>
 
-      <span className="absolute top-0 left-1/8 transform -translate-x-1/2 w-[2px] h-full bg-blue-300 dark:bg-blue-700" />
-      <span className="absolute top-0 left-7/8 transform -translate-x-1/2 w-[2px] h-full bg-blue-300 dark:bg-blue-700" />
+      <span
+        aria-hidden
+        className="absolute -top-2  left-1/8 transform -translate-x-1/2 w-[2px] h-full bg-blue-300 dark:bg-blue-700"
+      />
+      <span
+        aria-hidden
+        className="absolute -top-2 left-7/8 transform -translate-x-1/2 w-[2px] h-full bg-blue-300 dark:bg-blue-700"
+      />
     </section>
   );
 };

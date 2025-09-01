@@ -4,7 +4,7 @@ import Image from "next/image";
 export const Hero: React.FC = () => (
   <section
     aria-labelledby="hero-title"
-    className="relative isolate w-full overflow-hidden text-white min-h-[500px] md:min-h-[60dvh]"
+    className="relative isolate w-full overflow-hidden text-white min-h-[500px] md:min-h-[60dvh] bg-gradient-to-b from-[#001c3e] to-[#00729e]"
   >
     <div className="absolute inset-0 -z-10">
       <Image
@@ -12,11 +12,12 @@ export const Hero: React.FC = () => (
         alt="Systemy bezpieczeństwa"
         fill
         priority
-        className="h-full w-full object-cover"
+        sizes="100vw"
+        className="object-center object-cover"
       />
     </div>
 
-    <div className="relative z-10 flex flex-col justify-between items-center mx-auto min-h-[500px] md:min-h-[60dvh] max-w-7xl gap-4 px-6 py-10 text-center">
+    <div className="relative z-10 flex flex-col justify-between items-center mx-auto min-h-[500px] md:min-h-[60dvh] max-w-7xl  px-6 py-4 text-center">
       <h2
         id="hero-title"
         className="text-xl font-extrabold drop-shadow md:text-5xl animate-fade-in-up"
