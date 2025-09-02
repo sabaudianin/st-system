@@ -6,7 +6,7 @@ import { metadata } from "@/config/metadata";
 import { SkipToContent } from "@/components/layout/SkipToContent/SkipToContent";
 import { Header } from "@/components/layout/Header/Header";
 import { Footer } from "@/components/layout/Footer/Footer";
-
+import { businessJsonLd } from "@/lib/jsonld";
 export { metadata, viewport };
 
 export default function RootLayout({
@@ -20,6 +20,12 @@ export default function RootLayout({
       suppressHydrationWarning
     >
       <body className="min-h-dvh flex flex-col bg-background text-foreground font-sans antialiased">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(businessJsonLd()),
+          }}
+        />
         <SkipToContent />
 
         <Header />
