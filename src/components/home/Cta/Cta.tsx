@@ -1,18 +1,18 @@
 "use client";
 import type { FC } from "react";
+import { useReducedMotion } from "framer-motion";
+import { SITE, TEL_HREF } from "@/config/site";
 
 export const Cta: FC = () => {
-  const phone = "+48 123 456 789";
-  const telHref = `tel:${phone.replace(/\s+/g, "")}`;
+  const reduce = useReducedMotion();
+  const phone = SITE.contact.phoneDisplay;
 
   return (
     <section
       id="cta"
-      aria-labelledby="cta-title"
-      className="relative isolate overflow-hidden py-12 text-center text-foreground bg-[var(--panel-light)] "
-      itemScope
-      itemType="https://schema.org/LocalBusiness"
       role="region"
+      aria-labelledby="cta-title"
+      className="relative isolate overflow-hidden py-12 text-center text-foreground bg-[var(--panel)]"
     >
       <div className="mx-auto flex w-full max-w-xl flex-col items-center gap-4 px-6">
         <h2
@@ -23,29 +23,34 @@ export const Cta: FC = () => {
         </h2>
 
         <a
-          href={telHref}
-          className="group relative inline-flex items-center gap-3 rounded-full px-8 py-4 text-lg font-extrabold  transition-transform duration-200 hover:translate-x-0.5 active:scale-95 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent animate-fade-in-up"
+          href={TEL_HREF}
+          className="
+            group relative inline-flex items-center gap-3 rounded-full px-8 py-4 text-lg font-extrabold
+            transition-transform duration-200 hover:-translate-y-0.5 active:scale-95
+            focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent animate-fade-in-up
+            before:content-[''] before:absolute before:inset-0 before:-z-20 before:rounded-full before:animate-cta-glow"
           aria-label={`Zadzwoń teraz: ${phone}`}
           aria-describedby="cta-note"
           itemProp="telephone"
         >
           <span
-            className="absolute inset-0 -z-10 rounded-full border-success border-4 "
             aria-hidden
+            className="absolute inset-0 -z-10 rounded-full bg-lime-400 "
           />
 
           <span className="relative z-10">Zamów wycenę</span>
 
           <span className="relative z-10 inline-grid h-6 w-6 place-items-center text-success">
-            <span
-              aria-hidden="true"
-              className="absolute inset-0 rounded-full bg-success/60 animate-[ping_1.2s_ease-out_infinite]"
-            />
-
+            {!reduce && (
+              <span
+                aria-hidden="true"
+                className="absolute inset-0 rounded-full bg-success/45 animate-[ping_1.2s_ease-out_infinite]"
+              />
+            )}
             <svg
               className="relative h-5 w-5"
               viewBox="0 0 24 24"
-              fill="green"
+              fill="none"
               stroke="currentColor"
               strokeWidth={2}
               strokeLinecap="round"
@@ -62,7 +67,7 @@ export const Cta: FC = () => {
           id="cta-note"
           className="text-sm/relaxed text-foreground/90"
         >
-          Bezpośredni kontakt:
+          Bezpośredni kontakt:{" "}
           <span
             className="font-semibold"
             itemProp="telephone"

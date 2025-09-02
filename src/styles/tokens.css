@@ -32,8 +32,8 @@
   --radius-lg: 1rem;
 
   /* CTA gradient + glow */
-  --cta-glow-start: rgba(67, 122, 240, 0.827);
-  --cta-glow-mid: rgba(61, 147, 240, 0.97);
+  --cta-glow-start: rgba(4, 56, 14, 0.827);
+  --cta-glow-mid: rgba(38, 240, 72, 0.97);
   --cta-bg-1: #e9eef5;
   --cta-bg-2: #cfd9ea;
   --cta-bg-3: #b7c7e4;

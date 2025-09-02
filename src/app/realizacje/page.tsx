@@ -2,24 +2,24 @@ import Image from "next/image";
 
 const realizacje = [
   {
-    img: "/realizacja1.jpg",
-    title: "Monitoring 24/7 dla firmy logistycznej",
-    slogan: "Bezpieczeństwo bez przerwy",
+    img: "/hik.avif",
+    title: "Kamera zewnetrzna typu bullet",
+    slogan: "Zapewnia jasny obraz nawet w nocy",
   },
   {
-    img: "/realizacja2.jpg",
-    title: "Nowoczesny alarm w domu jednorodzinnym",
-    slogan: "Twój spokój jest bezcenny",
+    img: "/czujka.avif",
+    title: "Nowoczesny czujka ruchu",
+    slogan: "Dzieki długoletniemu doświadczeniu minimalizujemy ",
   },
   {
-    img: "/realizacja3.jpg",
-    title: "Sieć komputerowa w biurze",
-    slogan: "Stabilność i prędkość w pracy",
+    img: "/camera.avif",
+    title: "Kamery obrotowe z zoomem ",
+    slogan: "Wyjtkowo wyraźny obraz, doskonała redukcja szumów ",
   },
   {
-    img: "/realizacja4.jpg",
-    title: "Kontrola dostępu w magazynie",
-    slogan: "Wejście tylko dla uprawnionych",
+    img: "/2.avif",
+    title: "Przykładowy montaż elementów systemu alarmowego",
+    slogan: "Zawsze dbamy o estetyke i najwyższą jakośc montażu",
   },
 ];
 
