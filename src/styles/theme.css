@@ -113,11 +113,11 @@
   @keyframes cta-glow {
     0%,
     100% {
-      box-shadow: 0 0 28px 0 var(--cta-glow-start),
+      box-shadow: 0 0 14px 0 var(--cta-glow-start),
         0 2px 12px 0 rgba(0, 0, 0, 0.12);
     }
     50% {
-      box-shadow: 0 0 56px 8px var(--cta-glow-mid),
+      box-shadow: 0 0 28px 8px var(--cta-glow-mid),
         0 6px 28px 0 rgba(0, 0, 0, 0.22);
     }
   }

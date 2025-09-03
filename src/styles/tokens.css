@@ -39,7 +39,7 @@
   --cta-bg-3: #b7c7e4;
 }
 
-/* Dark semantyczne nadpisania, niezależne od @theme */
+/* Dark nadpisania, niezależne od @theme */
 .dark {
   --surface: var(--color-background);
   --surface-contrast: var(--color-foreground);
@@ -55,4 +55,5 @@
   --garish-bg: #1b4cc8;
   --surface-alt: #002647;
   --panel-light: #1e1e1e;
+  --primary-dark: #fff;
 }

@@ -9,7 +9,7 @@ export const SITE = {
   address: {
     streetAddress: "Świętego Mikołaja 6",
     postalCode: "05-510",
-    addressLocality: "Warszawa",
+    addressLocality: "Chylice",
     addressCountry: "PL",
   },
 } as const;

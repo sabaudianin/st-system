@@ -28,11 +28,11 @@ export default function RealizacjePage() {
     <section
       id="realizacje"
       aria-label="Wybrane realizacje ST System"
-      className="max-w-7xl mx-auto px-6 md:px-12 py-12"
+      className="max-w-7xl mx-auto px-6 md:px-12 py-12 bg-[var(--panel-light)]"
     >
-      <h1 className="text-2xl md:text-3xl font-bold text-center mb-10 text-[var(--foreground)]">
+      <h2 className="text-2xl md:text-3xl font-bold text-center mb-10 text-[var(--foreground)]">
         Nasze realizacje
-      </h1>
+      </h2>
 
       <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
         {realizacje.map((item, idx) => (

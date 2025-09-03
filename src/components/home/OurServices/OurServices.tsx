@@ -21,12 +21,11 @@ const services = [
             strokeLinejoin="round"
             vectorEffect="non-scaling-stroke"
           >
-            {/* kopuła syreny */}
             <path
               d="M10 20v-5a6 6 0 0 1 12 0v5"
               strokeWidth="2"
             />
-            {/* podstawa */}
+
             <rect
               x="8"
               y="20"
@@ -35,7 +34,7 @@ const services = [
               rx="2"
               strokeWidth="2"
             />
-            {/* promienie ostrzegawcze */}
+
             <path
               d="M3 16h3M26 16h3M7 9l2 2M23 11l2-2M16 6V4"
               strokeWidth="2"
@@ -66,7 +65,6 @@ const services = [
             strokeLinejoin="round"
             vectorEffect="non-scaling-stroke"
           >
-            {/* korpus kamery */}
             <rect
               x="4"
               y="10"
@@ -75,19 +73,19 @@ const services = [
               rx="2"
               strokeWidth="2"
             />
-            {/* obiektyw */}
+
             <circle
               cx="18"
               cy="14"
               r="2"
               strokeWidth="2"
             />
-            {/* uchwyt / ramię */}
+
             <path
               d="M9 18v4a2 2 0 0 0 2 2h5"
               strokeWidth="2"
             />
-            {/* „daszek”/przedłużka */}
+
             <path
               d="M22 12l6 3M28 15l-6 3"
               strokeWidth="2"
@@ -160,13 +158,12 @@ const services = [
             strokeLinejoin="round"
             vectorEffect="non-scaling-stroke"
           >
-            {/* łuk zewnętrzny */}
             <path d="M6 14q10-10 20 0" />
-            {/* łuk środkowy */}
+
             <path d="M9 18q7-7 14 0" />
-            {/* łuk wewnętrzny */}
+
             <path d="M12 21q4-4 8 0" />
-            {/* kropka sygnału */}
+
             <circle
               cx="16"
               cy="25"
@@ -200,12 +197,11 @@ const services = [
             strokeLinejoin="round"
             vectorEffect="non-scaling-stroke"
           >
-            {/* jarzmo/pałąk */}
             <path
               d="M12 14v-2a4 4 0 0 1 8 0v2"
               strokeWidth="2"
             />
-            {/* korpus */}
+
             <rect
               x="10"
               y="14"
@@ -214,7 +210,7 @@ const services = [
               rx="2"
               strokeWidth="2"
             />
-            {/* otwór na klucz */}
+
             <circle
               cx="16"
               cy="19"
