@@ -6,14 +6,14 @@ export const Hero: React.FC = () => (
     aria-labelledby="hero-title"
     className="relative isolate w-full overflow-hidden text-white min-h-[500px] md:min-h-[60dvh] bg-gradient-to-b from-[#001c3e] to-[#00729e]"
   >
-    <div className="absolute inset-0 -z-10">
+    <div className="absolute inset-0 -z-10 ">
       <Image
         src="/hero.png"
         alt="Systemy bezpieczeństwa"
         fill
         priority
         sizes="100vw"
-        className="object-center object-cover"
+        className="object-center object-cover "
       />
     </div>
 

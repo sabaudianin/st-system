@@ -5,7 +5,7 @@ import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { useDarkTheme } from "@/hooks/useDarkTheme/useDarkTheme";
 import { Logo } from "@/components/elements/logo/Logo";
-import { SunIcon } from "@/components/icons/SunIcon/SunICon";
+import { SunIcon } from "@/components/icons/SunIcon/SunIcon";
 import { MoonIcon } from "@/components/icons/MoonIcon/MoonIcon";
 
 type NavLink = { href: string; label: string };

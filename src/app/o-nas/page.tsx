@@ -6,7 +6,7 @@ export default function oNas() {
     <section
       id="o-nas"
       aria-label="O nas informacje o firmie ST System"
-      className="flex flex-col md:h-screen items-center justify-center text-center mx-auto px-6 py-14 shadow-xl "
+      className="flex flex-col md:h-screen items-center justify-center text-center mx-auto px-6 py-14 shadow-xl bg-[var(--panel-light)]"
       tabIndex={-1}
     >
       <h2 className="text-2xl md:text-3xl font-bold mb-4">O naszej firmie:</h2>
