@@ -1,15 +1,15 @@
 export const SITE = {
-  name: "ST-System",
-  url: "https://st-system.pl",
+  name: "RafBobBob",
+  url: "https://portfoliodev-hazel.vercel.app/",
   contact: {
-    phoneDisplay: "+48 698 698 810",
-    phoneE164: "+48698698810",
-    email: "slawomirtomala@wp.pl",
+    phoneDisplay: "+48 793 386 445",
+    phoneE164: "+48793386445",
+    email: "rafbobbob@gmail.com",
   },
   address: {
-    streetAddress: "Świętego Mikołaja 6",
-    postalCode: "05-510",
-    addressLocality: "Chylice",
+    streetAddress: "Stradomska 3",
+    postalCode: "04-619",
+    addressLocality: "Warszawa",
     addressCountry: "PL",
   },
 } as const;

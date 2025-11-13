@@ -14,7 +14,8 @@ export const ServiceList = () => {
     <section
       aria-label="Etapy naszej pracy"
       role="region"
-      className="relative  mx-auto py-4 bg-[var(--panel-light)]"
+      className="relative  mx-auto pb-8 bg-[var(--panel-light)] 
+      "
     >
       <ul
         role="list"
