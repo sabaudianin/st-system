@@ -12,7 +12,7 @@ export const Cta: FC = () => {
       id="cta"
       role="region"
       aria-labelledby="cta-title"
-      className="relative isolate overflow-hidden py-12 text-center text-foreground bg-[var(--panel-light)]"
+      className="relative isolate overflow-hidden py-12 text-center text-foreground bg-[var(--panel-light)] "
     >
       <div className="mx-auto flex w-full max-w-xl flex-col items-center gap-4 px-6">
         <h2

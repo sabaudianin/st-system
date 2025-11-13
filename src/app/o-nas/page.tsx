@@ -50,7 +50,9 @@ export default function oNas() {
         <span className="block py-8">
           Porozmawiajmy o bezpieczeństwie Twojego świata.
         </span>
-        <span className="text-2xl font-bold  ">Wybierz ST-System.</span>
+        <span className="text-2xl font-bold  ">
+          Wybierz rafbobbob@gmail.com.
+        </span>
       </div>
     </section>
   );
